@@ -1,6 +1,8 @@
 import { Component, VERSION } from '@angular/core';
 import { formControl } from '@angular/core/schematics/migrations/typed-forms/util';
+FormArray;
 import {
+  FormArray,
   FormBuilder,
   FormControl,
   FormGroup,
@@ -48,11 +50,8 @@ export class AppComponent {
   ngOnInit() {
     //this.registerationFrom.setValue({username:"admin"});
     console.log(this.registerationFrom);
-    
   }
 
-
-  
   constructor(private fb: FormBuilder) {}
 
   registerationFrom = this.fb.group({
@@ -65,5 +64,4 @@ export class AppComponent {
       postalcode: [''],
     }),
   });
-
 }
